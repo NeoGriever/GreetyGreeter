@@ -1,5 +1,5 @@
 {
-    "Author": "NeoGriever",
+  "Author": "Valenth Siveria",
     "Name": "Greety Greeter",
     "Punchline": "Automatically greet players who enter your defined area.",
     "Description": "/gg - Opens the Greety Greeter panel. Define a sphere or cube zone, and the plugin will automatically send customizable /tell sequences to any player who enters it.",
