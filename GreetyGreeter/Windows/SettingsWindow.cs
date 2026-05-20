@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Numerics;
+using Dalamud.Interface;
 using Dalamud.Interface.Windowing;
 using GreetyGreeter.Logic;
 using GreetyGreeter.Models;
@@ -321,7 +322,7 @@ public class SettingsWindow : Window
                 if (isTell)
                 {
                     ImGui.SameLine();
-                    ImGui.TextDisabled("⚠");
+                    ImGui.TextDisabled(FontAwesomeIcon.ExclamationTriangle.ToIconString());
                     if (ImGui.IsItemHovered()) ImGui.SetTooltip(Lang.T("tellHint"));
                 }
 
@@ -333,12 +334,12 @@ public class SettingsWindow : Window
                 if (ImGui.IsItemHovered()) ImGui.SetTooltip(Lang.T("lineDelay"));
 
                 ImGui.SameLine();
-                if (ImGui.SmallButton("↑")) moveUpIdx = i;
+                if (ImGui.SmallButton(FontAwesomeIcon.ArrowUp.ToIconString())) moveUpIdx = i;
                 ImGui.SameLine();
-                if (ImGui.SmallButton("↓")) moveDnIdx = i;
+                if (ImGui.SmallButton(FontAwesomeIcon.ArrowDown.ToIconString())) moveDnIdx = i;
                 ImGui.SameLine();
                 ImGui.PushStyleColor(ImGuiCol.Text, new Vector4(1f, 0.35f, 0.35f, 1f));
-                if (ImGui.SmallButton("✕")) removeIdx = i;
+                if (ImGui.SmallButton(FontAwesomeIcon.Times.ToIconString())) removeIdx = i;
                 ImGui.PopStyleColor();
 
                 ImGui.PopID();
@@ -409,7 +410,7 @@ public class SettingsWindow : Window
                     ImGui.TableNextColumn(); ImGui.TextUnformatted(entry.LastSeen.ToString("MM-dd HH:mm"));
                     ImGui.TableNextColumn();
                     ImGui.PushStyleColor(ImGuiCol.Text, new Vector4(1f, 0.35f, 0.35f, 1f));
-                    if (ImGui.SmallButton("✕##" + key) && ImGui.GetIO().KeyCtrl) toRemove = key;
+                    if (ImGui.SmallButton(FontAwesomeIcon.Times.ToIconString() + "##" + key) && ImGui.GetIO().KeyCtrl) toRemove = key;
                     ImGui.PopStyleColor();
                     if (ImGui.IsItemHovered()) ImGui.SetTooltip(Lang.T("deleteHint"));
                 }
@@ -464,7 +465,7 @@ public class SettingsWindow : Window
                 {
                     ImGui.PushID(i);
                     ImGui.PushStyleColor(ImGuiCol.Text, new Vector4(1f, 0.35f, 0.35f, 1f));
-                    if (ImGui.SmallButton("✕")) removeIdx = i;
+                    if (ImGui.SmallButton(FontAwesomeIcon.Times.ToIconString())) removeIdx = i;
                     ImGui.PopStyleColor();
                     ImGui.SameLine();
                     ImGui.TextUnformatted(_config.NameIgnoreList[i]);
@@ -557,7 +558,7 @@ public class SettingsWindow : Window
 
                     ImGui.SameLine();
                     ImGui.PushStyleColor(ImGuiCol.Text, new Vector4(1f, 0.35f, 0.35f, 1f));
-                    if (ImGui.SmallButton("✕")) removeIdx = i;
+                    if (ImGui.SmallButton(FontAwesomeIcon.Times.ToIconString())) removeIdx = i;
                     ImGui.PopStyleColor();
 
                     ImGui.PopID();

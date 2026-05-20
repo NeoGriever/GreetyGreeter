@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Numerics;
+using Dalamud.Interface;
 using Dalamud.Interface.Windowing;
 using GreetyGreeter.Logic;
 using Dalamud.Bindings.ImGui;
@@ -40,7 +41,7 @@ public class MainWindow : Window
         float btnRight = totalWidth - (spacing + 18f) * 2;
         ImGui.SameLine(btnRight);
 
-        if (ImGui.SmallButton("⚙##settings"))
+        if (ImGui.SmallButton($"{FontAwesomeIcon.Cogs.ToIconString()}##settings"))
             _settings.Toggle();
         if (ImGui.IsItemHovered())
             ImGui.SetTooltip(Lang.T("settings"));
@@ -48,7 +49,8 @@ public class MainWindow : Window
         ImGui.SameLine();
 
         ImGui.PushStyleColor(ImGuiCol.Text, enabledColor);
-        if (ImGui.SmallButton(_config.ZoneEnabled ? "●##t" : "○##t"))
+        var toggleIcon = _config.ZoneEnabled ? FontAwesomeIcon.CheckCircle : FontAwesomeIcon.Circle;
+        if (ImGui.SmallButton($"{toggleIcon.ToIconString()}##t"))
         {
             _config.ZoneEnabled = !_config.ZoneEnabled;
             _config.Save();

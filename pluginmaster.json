@@ -1,23 +1,24 @@
 [
-  {
-    "Author": "NeoGriever",
-    "Name": "Greety Greeter",
-    "Punchline": "Automatically greet players who enter your defined area.",
-    "Description": "/gg - Opens the Greety Greeter panel. Define a sphere or cube zone, and the plugin will automatically send customizable /tell sequences to any player who enters it.",
-    "InternalName": "GreetyGreeter",
-    "AssemblyVersion": "1.0.0.0",
-    "TestingAssemblyVersion": "1.0.0.0",
-    "ApplicableVersion": "any",
-    "DalamudApiLevel": 15,
-    "TestingDalamudApiLevel": 15,
-    "Tags": ["Greeting", "Social", "Tell", "Automation", "Zone"],
-    "DownloadLinkInstall": "https://raw.githubusercontent.com/NeoGriever/GreetyGreeter/main/latest.zip",
-    "DownloadLinkUpdate": "https://raw.githubusercontent.com/NeoGriever/GreetyGreeter/main/latest.zip",
-    "DownloadLinkTesting": "https://raw.githubusercontent.com/NeoGriever/GreetyGreeter/main/latest.zip",
-    "RepoUrl": "https://github.com/NeoGriever/GreetyGreeter",
-    "IconUrl": "https://raw.githubusercontent.com/NeoGriever/GreetyGreeter/main/GreetyGreeter/images/icon.png",
-    "ImageUrls": [],
-    "LastUpdate": 1779235200,
-    "DownloadCount": 0
-  }
+    {
+        "Author": "NeoGriever",
+        "Name": "Greety Greeter",
+        "Punchline": "Automatically greet players who enter your defined area.",
+        "Description": "/gg - Opens the Greety Greeter panel. Define a sphere or cube zone, and the plugin will automatically send customizable /tell sequences to any player who enters it.",
+        "InternalName": "GreetyGreeter",
+        "Tags": ["Greeting", "Social", "Tell", "Automation", "Zone"],
+        "AssemblyVersion": "1.0.0.0",
+        "TestingAssemblyVersion": "1.0.0.0",
+        "RepoUrl": "https://github.com/NeoGriever/GreetyGreeter",
+        "ApplicableVersion": "any",
+        "DalamudApiLevel": 15,
+        "TestingDalamudApiLevel": 15,
+        "IsHide": "False",
+        "IsTestingExclusive": "False",
+        "DownloadCount": 0,
+        "LastUpdate": 1779305120,
+        "IconUrl": "https://raw.githubusercontent.com/NeoGriever/GreetyGreeter/main/plugins/GreetyGreeter/icon.png",
+        "DownloadLinkInstall": "https://github.com/NeoGriever/GreetyGreeter/raw/main/plugins/GreetyGreeter/latest.zip",
+        "DownloadLinkUpdate": "https://github.com/NeoGriever/GreetyGreeter/raw/main/plugins/GreetyGreeter/latest.zip",
+        "DownloadLinkTesting": "https://github.com/NeoGriever/GreetyGreeter/raw/main/plugins/GreetyGreeter/latest.zip"
+    }
 ]
