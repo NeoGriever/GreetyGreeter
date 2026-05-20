@@ -1,0 +1,12 @@
+{
+    "Author": "NeoGriever",
+    "Name": "Greety Greeter",
+    "Punchline": "Automatically greet players who enter your defined area.",
+    "Description": "/gg - Opens the Greety Greeter panel. Define a sphere or cube zone, and the plugin will automatically send customizable /tell sequences to any player who enters it.",
+    "InternalName": "GreetyGreeter",
+    "AssemblyVersion": "1.0.0.0",
+    "ApplicableVersion": "any",
+    "DalamudApiLevel": 15,
+    "TestingDalamudApiLevel": 15,
+    "Tags": ["Greeting", "Social", "Tell", "Automation", "Zone"]
+}
